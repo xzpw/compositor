@@ -9,7 +9,7 @@ val networkModule = module {
     single { provideClient() }
 }
 
-private fun provideClient() = HttpClient(OkHttp){
+private fun provideClient() = HttpClient(OkHttp) {
     install(JsonFeature) {
         serializer = GsonSerializer()
     }

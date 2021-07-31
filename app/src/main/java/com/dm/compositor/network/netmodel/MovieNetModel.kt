@@ -3,7 +3,7 @@ package com.dm.compositor.network.netmodel
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Result(
+data class MovieNetModel(
     val adult: Boolean,
     val backdrop_path: String,
     val genre_ids: List<Int>,
